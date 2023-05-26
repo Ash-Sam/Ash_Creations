@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desi Girl Wall Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #9d5cf1;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Product Card</h2>
+
+<div class="card">
+  <img src="imgs\pic 40.jpg" alt="Indian Wear" style="width:100%">
+  <h1>Desi Girl Wall Art</h1>
+  <p class="price">$1500.00</p>
+  <p>This Pyrography Of A Beautiful Desi Girl Is Going Add Beauty To Any Space.</p>
+  <p>Material Use: Teak</p>
+  <a href="Checkout.html"><p><button>Add to Cart</button></p>
+</div>
+
+<button onclick="myFunction()">Dark Mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Engraving</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: san-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1fa2ff;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #a770ef;
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {  
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Image */
+.image {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1fa2ff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {  
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Glass Engraving</h1>
+  <marquee><h2><b><i>Mother's Day Sale... Get 25% OFF!</i></b></h2></marquee>
+  <p><i>Welcome To Ash Creations Engraving Collection</i></p>
+</div>
+
+<div class="topnav">
+   <i class="active"><a href="index.html"><i class="fa fa-home">&nbsp Home</a></i>
+  <a href="Aboutus.html"><i class="fa fa-user">&nbsp About Us</a></i>
+    <a href="#products"><i class="fa fa-product-hunt">&nbsp Products</a></i>
+    <a href="#services"><i class="fa fa-clone">&nbsp Services</a></i>
+    <a href="Contact.html"><i class="fa fa-phone">&nbsp Contact Us</a></i>
+  <a href="#search" style="float:right"><i class="fa fa-search">&nbsp Search</a></i>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Get 25% OFF Personalized Glass Engraving!</h2>
+      <h3>Popular Gift Item.</h3>
+      <div>
+      <img src="imgs\pic 28.jpg" alt="Coffee Mug" 
+      width="100%" height="600px">
+      </div>
+      <p>You Can Get This 20oz Engraved Coffee Mug For Only...</p>
+      <p><i>$100.00</i></p>
+    </div>
+    <div class="card">
+      <h2>Best Sellers</h2>
+      <h3>Set of 2</h3>
+      <div>
+        <img src="imgs\pic 51.jpg" alt="Champagne Glass"
+        width="100%" height="600px">
+      </div>
+      <p><b>Personalized Hand Cut N & M Champagne Glasses.</b></p>
+      <p><i>$250.00</i></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>What Is Engraving?</h2>
+      <div>
+      <img src="imgs\plate 9.jpg" alt="White Plate"
+       width="270" height="270">
+      </div>
+      <p><i>Engraving is a great way to personalize glass objects like mirrors, mugs, ceramics and showpieces. From letters to fancy patterns, anything can be added to glass objects.</i></p>
+    </div>
+    <div class="card">
+      <h3>Trending</h3>
+      <div>
+        <video controls="autoplay" width="270" height="200">
+         <source src="vidz 1.mp4" type="video/mp4">
+         </video>
+        <br/>
+      </br>
+        <div>
+          <img src="imgs\sw.jpg" alt="Stemless Wine Glass"
+          width="270" height="200">
+        </div>
+     <br/>   
+      <div>
+        <img src="imgs\wc 1.jpg" alt="Alcohol Case"
+        width="270" height="270">
+      </div>
+    </div>
+    <br/>
+    <div class="card">
+      <br/>
+
+      <h3><u>Follow Me</u></h3>
+      <p><i>@Ash Creations on:</i></p>
+   <i class="active"><a href="#facebook"><i class="fa fa-facebook-official">&nbsp Facebook</a></i>
+   <br/>
+    <br/>
+  <a href="#instagram"><i class="fa fa-instagram">&nbsp Instagram<aria-hidden="true></a></i>
+    <br/>
+     <br/>
+    <a href="#pinterest"><i class="fa fa-pinterest">&nbsp Pinterest<aria-hidden="true></a></i>
+      <br/>
+       <br/>
+      <a href="#whatsapp"><i class="fa fa-whatsapp">&nbsp WhatsApp<aria-hidden="true></a></i>
+  </div>
+  </div>
+</div>
+</div>
+</br>
+
+<div class="footer">
+  <a href="#copyright"><i class="fa fa-copyright">&nbsp Copyright<aria-hidden="true"></a></i>
+    <br/>
+     <br/>
+    <a href="#trademark"><i class="fa fa-trademark">&nbsp Trademark Ash Creations 2023<aria-hidden="true"></a></i>
+</div>
+
+</body>
+</html>

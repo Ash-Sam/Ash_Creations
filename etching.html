@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Etching</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: san-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, white, #fc5c7d 0%, #6a82fb 100%);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1fa2ff;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1fa2ff;
+  min-width: 160px;
+  box-shadow: #EE82EE;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #a770ef;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #EE82EE;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {  
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Image */
+.image {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1fa2ff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {  
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Glass Etching</h1>
+  <marquee><h2><b><i>Mother's Day Sale... Get 25% OFF!</i></b></h2></marquee>
+  <p><i>Welcome To Ash Creations Etching Collection</i></p>
+</div>
+
+<div class="topnav">
+   <i class="active"><a href="homepg.html"><i class="fa fa-home">&nbsp Home</a></i>
+  <a href="Aboutus.html"><i class="fa fa-user">&nbsp About Us</a></i>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-product-hunt">&nbsp Products</a></i>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="CBoard.html">Chopping Boards</a>
+    <a href="Glassware.html">Glassware</a>
+    <a href="Plates.html">Plates</a>
+    <a href="Soap.html">Soaps</a>
+  </div>
+</div>
+  <div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-clone">&nbsp Services</i> 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="etching.html">Glass Etching</a>
+    <a href="Engraving.html">Glass Engraving</a>
+    <a href="pyro.html">Pyrography</a>
+  </div>
+</div>
+    <a href="Contact.html"><i class="fa fa-phone">&nbsp Contact Us</a></i>
+  <a href="#search" style="float:right"><i class="fa fa-search">&nbsp Search</a></i>
+</div>
+
+<div>
+  <h1 align="center">Shop Now</h1>
+  <h3 style="text-align: center;"><i>Give Your Mom A Personlized Gift This Mother's Day. Get 25% OFF Etching!</i></h3>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Best Seller</h2>
+      <h4>Personalized Wedding Champagne Set.</h4>
+      <div>
+      <img src="imgs\pic 32.jpg" alt="Wedding Set" 
+      width="100%" height="575px">
+      </div>
+      <p>Get Yours Today!</p>
+      <p><i>*Set Consist Of A Pair Of Champagne Glass & A Bottle Of Wine.</i></p>
+    </div>
+    <div class="card">
+      <h2>Personalized Shot Glass</h2>
+      <h4>For Any Occasion.</h4>
+      <div>
+        <img src="imgs\pic 27.jpg" alt="Shot Glass"
+        width="100%" height="500px">
+      </div>
+      <p><b>Order Now!</b></p>
+      <p><i>At Ash Creations You Can Get Personalized To Your Specific Needs.</i></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>What Is Etching?</h2>
+      <div>
+      <img src="imgs\pic 35.jpg" alt="Coffee Mug"
+       width="270" height="270">
+      </div>
+      <p><i>Etching or "French embossing",is a popular technique developed during the mid-1800s that is still widely used in both residential and commercial spaces today.It is a subtle but elegant look that you will love. The chemicals in glass etching cream permanently "etch"the glass with micro-scratches to give it a frosted appearence.</i></p>
+    </div>
+    <div class="card">
+      <h3>Trending</h3>
+      <div>
+        <img src="imgs\M1.jpg" alt="Y&A"
+        width="270" height="175">
+        <br/>
+      </br>
+        <div>
+          <img src="imgs\pic 30 (1).jpg" alt="Shot Glasses"
+          width="270" height="175">
+        </div>
+     <br/>   
+      <div>
+        <img src="imgs\pic 34.jpg" alt="Champagne Glass"
+        width="270" height="220">
+      </div>
+    </div>
+
+       <h3><u>Follow Me</u></h3>
+      <p><i>@Ash Creations on:</i></p>
+   <i class="active"><a href="#facebook"><i class="fa fa-facebook-official">&nbsp Facebook</a></i>
+   <br/>
+    <br/>
+  <a href="#instagram"><i class="fa fa-instagram">&nbsp Instagram<aria-hidden="true></a></i>
+    <br/>
+     <br/>
+    <a href="#pinterest"><i class="fa fa-pinterest">&nbsp Pinterest<aria-hidden="true></a></i>
+      <br/>
+       <br/>
+      <a href="#whatsapp"><i class="fa fa-whatsapp">&nbsp WhatsApp<aria-hidden="true></a></i>
+  </div>
+  </div>
+</div>
+</div>
+</br>
+
+<div class="footer">
+  <a href="#copyright"><i class="fa fa-copyright">&nbsp Copyright<aria-hidden="true"></a></i>
+    <br/>
+     <br/>
+    <a href="#trademark"><i class="fa fa-trademark">&nbsp Trademark Ash Creations 2023<aria-hidden="true"></a></i>
+</div>
+
+</body>
+</html>

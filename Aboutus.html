@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #b26ef7;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #9933FF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }* {box-sizing: border-box;}
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #37bdc7;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #9933FF;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+}
+</style>
+</head>
+<body>
+  <div class="banner">
+    <img src="imgs\banner 2.jpg" alt= "Welcome Banner" width="100%" height="450px"> >
+  </div>
+<div class="about-section">
+  <h1>My Story</h1>
+  <p><i>Hi, I'm Asha!</i></p>
+  <p>Have you ever found yourself looking for that perfect unique gift for someone and you're lost for ideas?</p>
+  <p>You want something personal and practical but unsure of what his size or her favourite scent is and another gift card just isn't gonna cut it. Me Too!</P>
+  <br/>
+  <p>You'd love to send a gift that is unique and memorable that they will use, but also let's them know how special they are.</p>
+  <br/>
+  <p>I've actually been engraving and etching glass since 2017 and I have years of experience in making soaps and spa products, candle making, pyrography aka. woodburning, resin art etc...</p>
+  <p>These are some of the reasons why I started Ash Creations.</p>
+  <p>I wanted to bring my art and passion to you here online.</p>
+  <br/>
+  <p>As a creative artist, I help resolve those issues by providing you with unique and personalized gift items and products that is customized to each customer needs and made to order for each person you send them to.</p>
+  <p>I take pride in the quality and creativity of each gift item that I work on which helps make the gifts and products that you send truly special.</p>
+</div>
+
+<h2 style="text-align:center">Contact Me</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imgs\beach cake.jpg" alt="Ash13" style="width:100%">
+      <div class="container">
+        <h2>Fun Fact...</h2>
+        <p class="title">Did You Know?</p>
+        <p>I Learned How To Do Basic & Advanced Cake Decorating.</p>
+        <p>I Created This Beach Cake A Few Years Ago For My Niece's Birthday.</p>
+        <p><button class="button">Yes, I Knew!</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="imgs\Ash 13.jpg" alt="Ash" style="width:100%">
+      <div class="container">
+        <h2>Asha Samaroo</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Hi, My name is Asha. I am the owner of Ash Creations. If you would like to get more info about my products and services, you can message me via the Chat Box or you can send me an Email @</p>
+        <p>ash_creations@hotmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+

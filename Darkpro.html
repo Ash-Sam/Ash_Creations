@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pole Dancer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #9d5cf1;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+</style>
+</head>
+<body><h2 style="text-align:center">Product Card</h2>
+
+  <div class="card">
+    <img src="imgs\pic 35.jpg" alt="Black Coffee Mug" style="width:100%">
+    <h1>12 oz Coffee Mug</h1>
+    <p class="price">$80.00</p>
+    <p>Support Your Local Pole Dancer Coffee Mug Will Make A Wonderful Gift Item.</p>
+    <P>Etched</P>
+    <p><button>Add to Cart</button></p>
+  </div>
+  
+<h5>Toggle Dark/Light Mode</h5>
+<p><i>Click the button to toggle between dark and light mode for this product page.</i></p>
+
+<button onclick="myFunction()">Dark Mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
+
